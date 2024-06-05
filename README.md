@@ -1,8 +1,10 @@
 # xdump 🚀
 A one afternoon project cli based x86 disassembler  
 The goal of the project is to create a more interactive and prettier method than Objdump.  
-For now, its only working on Object Files, ELF.  
-Sooner, I will support PE format.  
+
+# Supported Formats
+- PE
+- ELF
 
 # Assembly Formatters
 - Intel

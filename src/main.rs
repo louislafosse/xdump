@@ -466,13 +466,10 @@ fn main() -> io::Result<()> {
                 .help("Specifies the filename"),
         )
         .get_matches();
-    
-    let filename = match matches.get_one::<String>("filename") {
-        Some(filename) => filename,
-        None => &std::string::String::from("a.out")
-    };
-    
+
+    let filename = matches.get_one::<String>("filename").expect("Failed to get filename");
     let mut buffer = Vec::new();
+
     File::open(filename)
         .expect("Failed to open file")
         .read_to_end(&mut buffer)

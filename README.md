@@ -1,4 +1,4 @@
-# xdump 🚀
+# Xdump 🚀
 A one afternoon project cli based x86 disassembler  
 The goal of the project is to create a more interactive and prettier method than Objdump.  
 
